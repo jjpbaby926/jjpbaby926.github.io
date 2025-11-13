@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Elms Sans; alt: ;
+    background-color: #7a0000;;
+    color: #fff;
+    padding: 0 px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #7a0000; /* Deep red bar */
+    padding: 20px 50px;
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+  h1 {
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+/* Logo */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: lowercase;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff3333;
+}
+
+/* Hero Section with Image Background */
+.hero-section {
+    background-image: url('background_food.png');
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+}
