@@ -173,7 +173,7 @@ body {
   background: #223322;
   border-left: 10px solid #44aa44;
    align-items: center;
-  color: #d1ffd1;
+  color: #000000;
 }
 h1 {
      font-size: 4rem;
@@ -267,4 +267,5 @@ h1 {
 .fa-twitter {
   background: #55ACEE;
   color: white;
+
 } 
