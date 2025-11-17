@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzoKitchen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+        <div class="logo">
+            <img src="ezokitchenn.png" alt="Restaurant Logo">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+          <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!---Reservation Section --->
+	<div class="reservation-container">
+  <h1>Join us</h1>
+  <center>参加しませんか/Tham gia cùng chúng tôi/เข้าร่วมกับเรา</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <center> <label for="res-name">Name/名前/Tên/ชื่อ</label>
+  <input type="text" id="res-name" placeholder="Your full name">
+
+  <label for="res-date">Date/日付/Ngày/วันที่</label>
+  <input type="date" id="res-date">
+
+  <label for="res-time">Time/時間/Thời gian/เวลา</label>
+  <input type="time" id="res-time">
+
+  <label for="res-guests">Guests/ゲスト/Khách/แขก</label>
+  <select id="res-guests">
+    <option value="1">1 Guest</option>
+    <option value="2">2 Guests</option>
+    <option value="3">3 Guests</option>
+    <option value="4">4 Guests</option>
+    <option value="5">5 Guests</option>
+  </select>
+<br>
+  <button onclick="submitReservation()">Reserve</button>
+
+  <div class="reservation-message" id="reservation-msg"></div>
+  <br>
+  <br>
+  <br>
+</div></center>
+
+<script>
+  function submitReservation() {
+    const name = document.getElementById("res-name").value;
+    const date = document.getElementById("res-date").value;
+    const time = document.getElementById("res-time").value;
+    const guests = document.getElementById("res-guests").value;
+
+    const msgBox = document.getElementById("reservation-msg");
+
+    if (!name || !date || !time) {
+      msgBox.style.display = "block";
+      msgBox.style.background = "#ffe0e0";
+      msgBox.style.borderLeft = "4px solid #cc0000";
+      msgBox.textContent = "Please fill out all fields.";
+      return;
+    }
+
+    msgBox.style.display = "block";
+    msgBox.style.background = "#dfffdc";
+    msgBox.style.borderLeft = "4px solid #3cb043";
+    msgBox.textContent =
+      `Reservation confirmed for ${name} on ${date} at ${time} for ${guests} guests.`;
+  }
+
+</script>

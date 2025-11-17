@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzoKitchen</title>
+    <link rel="stylesheet" href="styles.css">
+       <style>
+    /* === GLOBAL STYLES === */
+    body {
+      margin: 0;
+      background-color: ##7a0900; /* deep red */
+      color: #fff;
+      font-family: "Elms Sans", serif;
+    font-style:  ;
+    }
+
+    h1 {
+      font-size: 6rem;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: rem;
+      margin-bottom: 40px;
+    }
+
+    /* === LAYOUT === */
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 100px;
+      padding: 0 40px 60px;
+      flex-wrap: wrap;
+    }
+
+    .menu-column {
+      background-color: #000;
+      width: 450px;
+      padding: 50px;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flag {
+      width: 60px;
+      margin-bottom: 10px;
+      align-items: left;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-align: left;
+      width: 100%;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.3rem;
+    }
+
+    b {
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .price {
+      color: #bbb;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 960px) {
+      .menu-column {
+        width: 100%;
+      }
+      .menu-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
+   <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="ezokitchenn.png" alt="Restaurant Logo">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<h1>Menus</h1>
+  <p class="subtitle">メニュー /thực đơn/เมนู </p>
+
+  <div class="menu-container">
+    <!-- Japan -->
+    <div class="menu-column">
+      <img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag" class="flag" />
+      <h2>Appetizers/前菜</h2>
+      <ul>
+        <li><b>Edamame</b> Steamed young soybeans <span class="price">$6</span></li>
+        <li><b>Gyoza</b> Pan-fried pork & vegetable dumplings <span class="price">$9</span></li>
+        <li><b>Agedashi</b> Fried tofu in savory broth <span class="price">$8</span></li>
+        <li><b>Tuna Tataki</b> Seared tuna with ponzu <span class="price">$13</span></li>
+        <li><b>Yakitori</b> Chicken skewers glazed with tare <span class="price">$10</span></li>
+      </ul>
+
+      <h2>Entrees/メインディッシュ</h2>
+      <ul>
+        <li><b>Katsu Curry</b> Breaded chicken with curry <span class="price">$18</span></li>
+        <li><b>Salmon Teriyaki</b> Glazed salmon in teriyaki <span class="price">$22</span></li>
+        <li><b>Beef Sukiyaki</b> Simmered beef & tofu <span class="price">$24</span></li>
+        <li><b>Unagi Donburi</b> Freshwater eel over rice <span class="price">$23</span></li>
+        <li><b>Vegetable Tempura Bowl</b> Seasonal vegetables & rice <span class="price">$17</span></li>
+      </ul>
+
+      <h2>Desserts/和菓子</h2>
+      <ul>
+        <li><b>Mochi Ice Cream</b> Assorted ice cream mochi <span class="price">$9</span></li>
+        <li><b>Matcha Cheesecake</b> Green tea infused cheesecake <span class="price">$10</span></li>
+        <li><b>Dorayaki Pancakes</b> Sweet red bean pancakes <span class="price">$8</span></li>
+        <li><b>Black Sesame Ice Cream</b> Roasted sesame flavor <span class="price">$8</span></li>
+        <li><b>Yuzu Panna Cotta</b> Citrus panna cotta <span class="price">$9</span></li>
+      </ul>
+    </div>
+
+    <!-- Vietnam -->
+    <div class="menu-column">
+      <img src="https://flagcdn.com/w80/vn.png" alt="Vietnam Flag" class="flag" />
+      <h2>Appetizers/món khai vị</h2>
+      <ul>
+        <li><b>Gỏi Cuốn</b> Fresh spring rolls with peanut sauce <span class="price">$8</span></li>
+        <li><b>Chả Giò</b> Fried egg rolls <span class="price">$9</span></li>
+        <li><b>Bánh Xèo Mini</b> Savory pancakes with shrimp & pork <span class="price">$10</span></li>
+        <li><b>Bò Lá Lốt</b> Beef wrapped in betel leaves <span class="price">$11</span></li>
+        <li><b>Nem Nướng</b> Grilled pork sausage skewers <span class="price">$9</span></li>
+      </ul>
+
+      <h2>Entrees/Món chính</h2>
+      <ul>
+        <li><b>Phở Bò</b> Beef noodle soup <span class="price">$16</span></li>
+        <li><b>Cơm Tấm Sườn Nướng</b> Pork chops with broken rice <span class="price">$18</span></li>
+        <li><b>Bún Thịt Nướng</b> Grilled pork vermicelli <span class="price">$17</span></li>
+        <li><b>Cá Kho Tộ</b> Caramelized fish clay pot <span class="price">$20</span></li>
+        <li><b>Bún Chay</b> Vegetarian noodle bowl <span class="price">$15</span></li>
+      </ul>
+
+      <h2>Desserts/Món tráng miệng</h2>
+      <ul>
+        <li><b>Chè Ba Màu</b> 3-color dessert <span class="price">$8</span></li>
+        <li><b>Bánh Chuối Nướng</b> Baked banana cake <span class="price">$9</span></li>
+        <li><b>Chè Chuối</b> Sweet banana coconut milk <span class="price">$8</span></li>
+        <li><b>Bánh Flan</b> Caramel custard <span class="price">$9</span></li>
+        <li><b>Kem Dừa</b> Coconut ice cream <span class="price">$10</span></li>
+      </ul>
+    </div>
+
+    <!-- Thailand -->
+    <div class="menu-column">
+      <img src="https://flagcdn.com/w80/th.png" alt="Thailand Flag" class="flag" />
+      <h2>Appetizers/อาหารเรียกน้ำย่อย</h2>
+      <ul>
+        <li><b>Tod Mun Pla</b> Fish cakes with cucumber relish <span class="price">$9</span></li>
+        <li><b>Satay Chicken Skewers</b> With peanut sauce <span class="price">$10</span></li>
+        <li><b>Thai Spring Rolls</b> Sweet chili sauce <span class="price">$8</span></li>
+        <li><b>Som Tum</b> Green papaya salad <span class="price">$10</span></li>
+      </ul>
+
+      <h2>Entrees/อาหารจานหลัก</h2>
+      <ul>
+        <li><h3>Pad Thai</h3> Stir-fried noodles with shrimp <span class="price">$17</span></li>
+        <li><b>Green Curry Chicken</b> Basil & coconut milk <span class="price">$18</span></li>
+        <li><b>Pad Kra Pao</b> Basil stir-fry <span class="price">$17</span></li>
+        <li><b>Massaman Beef Curry</b> Slow braised curry <span class="price">$21</span></li>
+        <li><b>Pineapple Fried Rice</b> Cashews & shrimp <span class="price">$16</span></li>
+      </ul>
+
+      <h2>Desserts/ของหวาน</h2>
+      <ul>
+        <li><b>Mango Sticky Rice</b> Sweet mango & coconut <span class="price">$10</span></li>
+        <li><b>Thai Tea Crème Brûlée</b> Thai tea infused <span class="price">$9</span></li>
+        <li><b>Fried Banana</b> Drizzled with honey <span class="price">$8</span></li>
+        <li><b>Pandan Coconut Pudding</b> Steamed pandan custard <span class="price">$9</span></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
