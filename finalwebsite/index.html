@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project 2025: JJP</title>
+
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: white;
+  overflow: hidden;
+}
+
+/* TITLE */
+.title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 800;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* SHAPE WRAPPER */
+.shape {
+  position: absolute;
+}
+
+/* VISUAL POLYGON */
+.shape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* CLICK OVERLAY */
+.shape a {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* TEXT */
+.label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* HOVER */
+.shape:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+}
+
+/* EZ KITCHEN */
+.kitchen {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 65%;
+}
+
+.kitchen::before {
+  background: #E1A263;
+  clip-path: polygon(0 0, 80% 0, 55% 100%, 0 100%);
+}
+
+/* PLATFORM POEMS */
+.poems {
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 70%;
+}
+
+.poems::before {
+  background: #B77BD8;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+/* COLLECTIBLES */
+.collectibles {
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  height: 45%;
+}
+
+.collectibles::before {
+  background: #77C662;
+  clip-path: polygon(0 0, 65% 0, 100% 100%, 0 100%);
+}
+
+/* BASIC BUILD */
+.build {
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 35%;
+}
+
+.build::before {
+  background: #556BB4;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* TEXT ROTATIONS */
+.kitchen .label { transform: rotate(-35deg); }
+.poems .label { transform: rotate(90deg); }
+.collectibles .label { transform: rotate(-30deg); }
+.build .label { transform: rotate(-20deg); }
+</style>
+</head>
+
+<body>
+
+<div class="title"><h1>Project 2025: 
+<br>Jaelen Pinkney</h1></div>
+
+<div class="shape kitchen">
+  <a href="https://jjpbaby926.github.io/ezokitchen/"></a>
+  <div class="label"><h1>Ezo Kitchen</h1></div>
+</div>
+
+<div class="shape poems">
+  <a href="https://www.tiktok.com/@a.i.w30?_t=ZP-8zeCN8oTxHS&_r=1s"></a>
+  <div class="label"><h1>Platform Poems</h1></div>
+</div>
+
+<div class="shape collectibles">
+  <a href="https://jjpbaby926.github.io/collectible/"></a>
+  <div class="label"><h1>Collectibles</h1></div>
+</div>
+
+<div class="shape build">
+  <a href="https://jjpbaby926.github.io/maze_of_interaction/"></a>
+  <div class="label"><h1>Basic Build</h1></div>
+</div>
+
+</body>
+</html>
